@@ -1,0 +1,10 @@
+package com.Yashwanth.Repo;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.Yashwanth.Entity.*;
+
+@Repository
+public interface ProductRepository extends JpaRepository<Productentity, Long> {
+    // Custom methods for searching can be added here, e.g., findByNameContaining(String name)
+}
